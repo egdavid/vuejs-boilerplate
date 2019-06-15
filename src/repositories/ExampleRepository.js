@@ -6,11 +6,11 @@ export default {
     return Repository.get(`${resource}`);
   },
 
-  getExemple(exampleId) {
+  getExample(exampleId) {
     return Repository.get(`${resource}/${exampleId}`);
   },
 
-  createExemple(payload) {
+  createExample(payload) {
     return Repository.post(`${resource}`, payload);
   }
 };
