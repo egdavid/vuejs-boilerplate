@@ -16,9 +16,9 @@ Vue.use(Vuex)
 Vue.use(BootstrapVue)
 Vue.use(PortalVue)
 Vue.use(VueProgressBar, {
-  color: '#7957d5',
-  failedColor: '#874b4b',
-  thickness: '2px',
+  color: '#4fc08d',
+  failedColor: '#ff0000',
+  thickness: '5px',
   transition: {
     speed: '0.2s',
     opacity: '0.6s',

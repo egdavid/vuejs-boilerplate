@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 import Home from '@/views/Home.vue'
+import Repository from '@/views/Repository.vue'
 
 Vue.use(Router)
 
@@ -11,8 +12,13 @@ const router = new Router({
   routes: [
     {
       path: '/',
-      name: 'Home',
+      name: 'home',
       component: Home
+    },
+    {
+      path: 'repository',
+      name: 'repository',
+      component: Repository
     }
   ]
 })

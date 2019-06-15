@@ -1,7 +1,7 @@
-import BaseRepository from './BaseRepository'
+import ExampleRepository from './ExampleRepository'
 
 const repositories = {
-  base: BaseRepository
+  example: ExampleRepository
 };
 
 export const RepositoryFactory = {

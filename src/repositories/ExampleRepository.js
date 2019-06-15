@@ -1,16 +1,16 @@
 import Repository from "./Repository";
 
-const resource = "/base";
+const resource = "https://jsonplaceholder.typicode.com/posts";
 export default {
   get() {
     return Repository.get(`${resource}`);
   },
 
-  getTeam(baseId) {
-    return Repository.get(`${resource}/${baseId}`);
+  getExemple(exampleId) {
+    return Repository.get(`${resource}/${exampleId}`);
   },
 
-  createTeam(payload) {
+  createExemple(payload) {
     return Repository.post(`${resource}`, payload);
   }
 };
