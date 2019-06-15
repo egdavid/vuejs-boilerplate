@@ -1,4 +1,4 @@
-# nbamemes
+# vuejsboilerplate
 
 ## Project setup
 ```
