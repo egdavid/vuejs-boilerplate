@@ -2,7 +2,7 @@
 
 ### Introduction
 
-This boilerplate provides a decent quick start and is built on a Vue CLI + Vue Bootstrap foundation.
+This boilerplate provides a decent quick start and is built on a Vue CLI + Vue Bootstrap 4.3 foundation.
 
 ### How to get started
 
