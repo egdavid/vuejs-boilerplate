@@ -30,7 +30,8 @@ If you discover a security vulnerability within this boilerplate, please create 
 
 ### ToDo
 
-Create a Wiki/Documentation to describe the installed packages and project specs (axios repository, vuex store modules)
+*Create a Wiki to describe the project, installed packages and the specs (axios repository, vuex store modules)
+*Add user Registration / Login logic through Vuex states/mutations
 
 ### Customize configuration
 
