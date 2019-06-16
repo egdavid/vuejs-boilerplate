@@ -1,10 +1,13 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import Authenticator from '@/lib/Authenticator'
 
 import Home from '@/views/Home.vue'
 import Repository from '@/views/Repository.vue'
+import Profile from '@/views/Profile.vue'
 
 Vue.use(Router)
+const auth = new Authenticator()
 
 const router = new Router({
   mode: 'history',
@@ -19,7 +22,13 @@ const router = new Router({
       path: 'repository',
       name: 'repository',
       component: Repository
-    }
+    },
+    {
+      path: '/profile',
+      name: 'profile',
+      beforeEnter: auth.requireAuth,
+      component: Profile
+    },
   ]
 })
 

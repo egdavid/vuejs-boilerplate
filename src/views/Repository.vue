@@ -6,7 +6,13 @@
         <b-col>
           <div v-show="!isLoading">
             <p>Content fetched from an API using the Repository</p>
-            <pre>
+            <b-button
+              @click="fetchExample()"
+              variant="primary"
+            >
+              Load Data
+            </b-button>
+            <pre class="mt-4">
               {{ base }}
             </pre>
           </div>
@@ -40,7 +46,6 @@
 
     },
     created() {
-      this.fetchExample()
     },
     methods: {
       async fetchExample () {
