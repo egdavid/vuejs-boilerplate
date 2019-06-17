@@ -5,6 +5,7 @@ import Authenticator from '@/lib/Authenticator'
 import Home from '@/views/Home.vue'
 import Repository from '@/views/Repository.vue'
 import Profile from '@/views/Profile.vue'
+import Portal from '@/views/Portal.vue'
 
 Vue.use(Router)
 const auth = new Authenticator()
@@ -19,9 +20,14 @@ const router = new Router({
       component: Home
     },
     {
-      path: 'repository',
+      path: '/repository',
       name: 'repository',
       component: Repository
+    },
+    {
+      path: '/portal',
+      name: 'portal',
+      component: Portal
     },
     {
       path: '/profile',

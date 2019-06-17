@@ -26,10 +26,8 @@
 <script>
   import Header from '@/components/Header/Header.vue'
   import Footer from '@/components/Footer/Footer.vue'
-
   import { RepositoryFactory } from '@/repositories/RepositoryFactory'
     const ExampleRepository = RepositoryFactory.get('example')
-
   export default {
     name: 'Repository',
     components: {

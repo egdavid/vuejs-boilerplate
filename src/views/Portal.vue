@@ -5,7 +5,7 @@
       <b-row>
         <b-col>
           <div>
-            You are logged in as <strong>{{ profile.username }}</strong>
+            <portal-target name="destination"></portal-target>
           </div>
         </b-col>
       </b-row>
@@ -15,11 +15,12 @@
 </template>
 
 <script>
+
   import Header from '@/components/Header/Header.vue'
   import Footer from '@/components/Footer/Footer.vue'
-  import { mapGetters } from 'vuex'
+
   export default {
-    name: 'Profile',
+    name: 'Portal',
     components: {
       Header,
       Footer
@@ -30,7 +31,7 @@
       }
     },
     computed: {
-      ...mapGetters(['profile'])
+
     },
     created() {
 
@@ -39,6 +40,7 @@
 
     }
   }
+
 </script>
 
 <style scoped>

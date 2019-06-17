@@ -7,6 +7,7 @@
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
         <router-link class="nav-item" tag="li" :to="{ name: 'repository' }"><a class="nav-link">Repository</a></router-link>
+        <router-link class="nav-item" tag="li" :to="{ name: 'portal' }"><a class="nav-link">Portal</a></router-link>
         <router-link class="nav-item" tag="li" :to="{ name: 'profile' }"><a class="nav-link">Profile (protected route)</a></router-link>
       </b-navbar-nav>
 
@@ -37,9 +38,7 @@
 </template>
 
 <script>
-
   import { mapActions, mapGetters } from 'vuex'
-
   export default {
     name: 'Navbar',
     data() {
@@ -57,5 +56,4 @@
       ...mapActions(['login', 'logout'])
     }
   }
-
 </script>

@@ -4,7 +4,15 @@
     <b-container>
       <b-row>
         <b-col>
-          <p>Here goes the content.</p>
+          <div>
+            Here goes the content!
+            <portal
+              v-if="usePortal"
+              to="destination"
+            >
+              <p>This slot content will be rendered at the Portal destination component.</p>
+            </portal>
+          </div>
         </b-col>
       </b-row>
     </b-container>
@@ -23,7 +31,7 @@
     },
     data() {
       return {
-
+        usePortal: true
       }
     },
     computed: {
