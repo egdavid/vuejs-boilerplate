@@ -5,7 +5,7 @@ import store from '@/store'
 const auth = new Authenticator()
 
 const state = {
-  authenticated: null,
+  authenticated: false,
   profile: null,
 }
 
