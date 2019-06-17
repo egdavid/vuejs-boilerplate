@@ -1,4 +1,7 @@
 # Vue.js Boilerplate
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg" width="300">
+</p>
 
 ### Introduction
 
