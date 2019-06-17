@@ -29,14 +29,9 @@ export default class Authenticator {
     return new Promise((resolve, reject) => {
       /* Replace with your own authentication logic */
       const err = false
-      const sessionData = {
-        accessToken: btoa(+new Date()).slice(0, -5), // dev: random unique string
-        idToken: btoa(+new Date()).slice(0, -2), // dev: longer random unique string
-        expiresIn: new Date().getTime() // dev: timestamp
-      }
 
       if (err) return reject(err)
-      resolve(sessionData)
+      resolve(true)
     })
   }
 

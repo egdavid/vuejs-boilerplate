@@ -6,9 +6,6 @@ const auth = new Authenticator()
 
 const state = {
   authenticated: null,
-  accessToken: null,
-  idToken: null,
-  expiresAt: null,
   profile: null,
 }
 
@@ -24,17 +21,11 @@ const getters = {
 const mutations = {
   authenticated (state, data) {
     state.authenticated = true
-    state.accessToken = data.session.accessToken
-    state.idToken = data.session.idToken
-    state.expiresAt = data.session.expiresIn * 1000 + new Date().getTime()
-    state.profile = data.auth
+    state.profile = data
   },
 
   logout (state) {
     state.authenticated = false
-    state.accessToken = null
-    state.idToken = null
-    state.expiresAt = null
     state.profile = null
   }
 }
@@ -51,7 +42,7 @@ const actions = {
 
   handleAuthentication ({ commit }, authData) {
     auth.handleAuthentication().then(sessionData => {
-      commit('authenticated', {session: sessionData, auth: { username: authData.login } })
+      commit('authenticated', { username: authData.login })
     }).catch(err => {
       console.log(err)
     })
