@@ -14,7 +14,7 @@ But if you're starting with Vue.js or JavaScript or even with code in general or
 ### How to get started
 
 ```
-clone https://github.com/roasted-toast/vuejs-boilerplate <project-name>
+clone https://github.com/egdavid/vuejs-boilerplate <project-name>
 cd <project-name>
 npm install
 npm run serve
