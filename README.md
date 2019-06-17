@@ -38,7 +38,6 @@ If you discover a security vulnerability within this boilerplate, please create 
 ### ToDo
 
 * Create a Wiki to describe the project, installed packages and the specs (axios repository, vuex store modules)
-* Add PortalVue example
 * Add comments, more comments!
 
 ### Customize configuration
