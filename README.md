@@ -9,7 +9,7 @@ This boilerplate provides a decent quick start for a brand new project and is bu
 
 If you're more looking for a production ready boilerplate, I advise you to consider using [vuesion](https://github.com/vuesion/vuesion).
 
-But if you're starting with Vue.js or JavaScript or even with code in general or if you just need a skeleton, mine could be a good start 🙂
+But if you're starting with Vue.js or JavaScript or even with code in general or if you just need a skeleton, mine could be a good start.
 
 ### How to get started
 
