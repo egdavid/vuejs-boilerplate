@@ -1,4 +1,5 @@
 # Vue.js Boilerplate
+
 <p align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg" width="300">
 </p>
@@ -19,6 +20,7 @@ cd <project-name>
 npm install
 npm run serve
 ```
+
 The app is browsable under the `http://localhost:8080/` url.
 
 ### Compiles and minifies for production
@@ -37,9 +39,9 @@ If you discover a security vulnerability within this boilerplate, please create 
 
 ### ToDo
 
-* Create a Wiki to describe the project, installed packages and the specs (axios repository, vuex store modules)
-* Implement vue-cookie for handling browser cookies
-* Add comments, more comments!
+- Create a Wiki to describe the project, installed packages and the specs (axios repository, vuex store modules)
+- Implement default Cypress tests
+- Add comments, more comments!
 
 ### Customize configuration
 
