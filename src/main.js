@@ -35,7 +35,10 @@ Vue.use(VueProgressBar, {
 });
 
 Vue.prototype.$appName = process.env.VUE_APP_NAME;
-VueCookies.set("appName", process.env.VUE_APP_NAME);
+
+if (!$cookies.isKey("appName")) {
+  $cookies.set("appName", process.env.VUE_APP_NAME);
+}
 
 Vue.config.productionTip = false;
 
