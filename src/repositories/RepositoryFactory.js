@@ -1,4 +1,4 @@
-import ExampleRepository from './ExampleRepository'
+import ExampleRepository from "./ExampleRepository";
 
 const repositories = {
   example: ExampleRepository

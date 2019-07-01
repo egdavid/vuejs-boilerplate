@@ -1,6 +1,6 @@
 <template>
   <div class="d-flex flex-column h-100">
-    <Header/>
+    <Header />
     <b-container>
       <b-row>
         <b-col>
@@ -13,7 +13,7 @@
         </b-col>
       </b-row>
     </b-container>
-    <Footer/>
+    <Footer />
   </div>
 </template>
 

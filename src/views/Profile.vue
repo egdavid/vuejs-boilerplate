@@ -5,7 +5,8 @@
       <b-row>
         <b-col>
           <div>
-            You are logged in as <strong>{{ profile.username }}</strong>
+            You are logged in as
+            <strong>{{ profile.username }}</strong>
           </div>
         </b-col>
       </b-row>
@@ -15,32 +16,25 @@
 </template>
 
 <script>
-  import Header from '@/components/Header/Header.vue'
-  import Footer from '@/components/Footer/Footer.vue'
-  import { mapGetters } from 'vuex'
-  export default {
-    name: 'Profile',
-    components: {
-      Header,
-      Footer
-    },
-    data() {
-      return {
-
-      }
-    },
-    computed: {
-      ...mapGetters(['profile'])
-    },
-    created() {
-
-    },
-    methods: {
-
-    }
-  }
+import Header from "@/components/Header/Header.vue";
+import Footer from "@/components/Footer/Footer.vue";
+import { mapGetters } from "vuex";
+export default {
+  name: "Profile",
+  components: {
+    Header,
+    Footer
+  },
+  data() {
+    return {};
+  },
+  computed: {
+    ...mapGetters(["profile"])
+  },
+  created() {},
+  methods: {}
+};
 </script>
 
 <style scoped>
-
 </style>

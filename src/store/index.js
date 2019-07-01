@@ -1,16 +1,16 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
-import VuexPersist from 'vuex-persist'
+import Vue from "vue";
+import Vuex from "vuex";
+import VuexPersist from "vuex-persist";
 
-import session from './modules/session'
-import module from './modules/module'
+import session from "./modules/session";
+import module from "./modules/module";
 
-Vue.use(Vuex)
+Vue.use(Vuex);
 
 const vuexLocalStorage = new VuexPersist({
-  key: 'vuex',
+  key: "vuex",
   storage: window.localStorage
-})
+});
 
 export default new Vuex.Store({
   plugins: [vuexLocalStorage.plugin],
@@ -18,4 +18,4 @@ export default new Vuex.Store({
     session,
     module
   }
-})
+});

@@ -15,34 +15,23 @@
 </template>
 
 <script>
+import Header from "@/components/Header/Header.vue";
+import Footer from "@/components/Footer/Footer.vue";
 
-  import Header from '@/components/Header/Header.vue'
-  import Footer from '@/components/Footer/Footer.vue'
-
-  export default {
-    name: 'Portal',
-    components: {
-      Header,
-      Footer
-    },
-    data() {
-      return {
-
-      }
-    },
-    computed: {
-
-    },
-    created() {
-
-    },
-    methods: {
-
-    }
-  }
-
+export default {
+  name: "Portal",
+  components: {
+    Header,
+    Footer
+  },
+  data() {
+    return {};
+  },
+  computed: {},
+  created() {},
+  methods: {}
+};
 </script>
 
 <style scoped>
-
 </style>

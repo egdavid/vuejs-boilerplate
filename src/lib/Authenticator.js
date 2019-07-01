@@ -1,23 +1,22 @@
-import store from '@/store'
+import store from "@/store";
 
 export default class Authenticator {
-
-  constructor () {
+  constructor() {
     /* For later use */
   }
 
   requireAuth(to, from, next) {
-    if (! (new Authenticator()).isAuthenticated()) {
+    if (!new Authenticator().isAuthenticated()) {
       next({
-        path: '/',
+        path: "/",
         query: { redirect: to.fullPath }
       });
     } else {
-      next()
+      next();
     }
   }
 
-  login (authData) {
+  login(authData) {
     /* Call authentication method (Ex: Auth0 login) or validate authData */
   }
 
@@ -25,18 +24,17 @@ export default class Authenticator {
     /* Call logout method (Ex: Auth0 logout) */
   }
 
-  handleAuthentication () {
+  handleAuthentication() {
     return new Promise((resolve, reject) => {
       /* Replace with your own authentication logic */
-      const err = false
+      const err = false;
 
-      if (err) return reject(err)
-      resolve(true)
-    })
+      if (err) return reject(err);
+      resolve(true);
+    });
   }
 
   isAuthenticated() {
-    return store.state.session.authenticated
+    return store.state.session.authenticated;
   }
-
 }
