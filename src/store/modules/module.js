@@ -21,7 +21,7 @@ const actions = {
   async loadTest({ commit }) {
     try {
       const response = await axios.get(`${process.env.VUE_APP_API_URL}/test`, {
-        headers: { Authorization: `Bearer ${token}` }
+        /* headers: { Authorization: `Bearer ${token}` } // Add your own token variable for jwt authentification*/
       });
       commit("setTest", response.data);
     } catch (error) {
