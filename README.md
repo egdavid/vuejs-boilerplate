@@ -8,7 +8,7 @@
 
 This boilerplate provides a decent quick start for a brand new project and is built on a Vue CLI + Vue Bootstrap 4.3 foundation. It's based on my own experiences and needs. You might be finding some useful things and some useless, so, just take what you need.
 
-If you're more looking for a production ready boilerplate, I advise you to consider using [Vuesion](https://github.com/vuesion/vuesion). You could also consider using the [Nuxtjs](https://nuxtjs.org) framework.
+If you're more looking for a production ready boilerplate, I advise you to consider using [Vuesion](https://github.com/vuesion/vuesion). You could also take a look at the [Nuxt.js](https://nuxtjs.org) framework.
 
 But if you're starting with Vue.js or JavaScript or even with code in general or if you just need a skeleton, mine could be a good start.
 
