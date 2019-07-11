@@ -100,10 +100,6 @@ router.beforeEach((to, from, next) => {
     .slice()
     .reverse()
     .find(r => r.meta && r.meta.metaTags);
-  const previousNearestWithMeta = from.matched
-    .slice()
-    .reverse()
-    .find(r => r.meta && r.meta.metaTags);
 
   if (nearestWithTitle) document.title = nearestWithTitle.meta.title;
 
